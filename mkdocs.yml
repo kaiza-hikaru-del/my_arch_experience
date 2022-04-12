@@ -1,0 +1,72 @@
+site_name: 我的 Arch Linux 使用心得
+repo_name: kaiza-hikaru-del/my_arch_experience
+repo_url: https://github.com/kaiza-hikaru-del/my_arch_experience
+
+theme:
+  name: material
+  language: zh
+  palette:
+    scheme: slate
+  features:
+    - navigation.tabs
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+
+nav:
+  - 介绍: 
+    - 概述: index.md
+    - 使用工具列表: view/tools.md
+  - 安装:
+    - Arch 安装过程:
+      - Arch 安装过程概述: arch/install/gen.md
+      - 联网: arch/install/network.md
+      - 更新系统时间: arch/install/time.md
+      - 硬盘分区、格式化与挂载: arch/install/disk.md
+      - 安装系统与必要工具: arch/install/install.md
+      - 配置系统: arch/install/config.md
+      - 解挂载并重新启动: arch/install/unmount.md
+    - Arch 安装后的操作: 
+      - Arch 安装后的操作概述: arch/after/gen.md
+      - 联网: arch/after/network.md
+      - 创建非 root 用户并加入 sudoer: arch/after/user.md
+      - 安装 AUR 工具 yay: arch/after/yay.md
+    - Arch 安装图形界面: 
+      - Arch 安装图形界面概述: arch/graphic/gen.md
+      - 安装显卡驱动: arch/graphic/driver.md
+      - 安装显示服务程序: arch/graphic/server.md
+      - 安装窗口管理器: arch/graphic/wm.md
+      - 安装显示管理器: arch/graphic/dm.md
+      - 安装其他程序: arch/graphic/need.md
+  - ZSH:
+    - 安装 ZSH 与 oh my zsh: zsh/install.md
+    - ZSH 配置: zsh/config.md
+  - Neovim:
+    - Neovim 基础配置: neovim/config.md
+    - Neovim 插件:
+      - Neovim 插件管理: neovim/plug/plug.md
+      - 目录树 NERDTree: neovim/plug/nerdtree.md
+      - 快速注释 NERDCommenter: neovim/plug/nerdcommenter.md
+      - 标签列表 Tagbar: neovim/plug/tagbar.md
+      - 括号补全 Auto Pairs: neovim/plug/autopairs.md
+      - 代码补全 coc.nvim: neovim/plug/coc.md
+    - Neovim 快捷键: neovim/hotkey.md
+    - Neovim 主题: neovim/scheme.md
+  - 科学上网:
+    - 科学上网概述: kexueshangwang/gen.md
+    - 科学上网服务端: kexueshangwang/server.md
+    - 科学上网客户端: 
+      - Windows 客户端: kexueshangwang/client/win.md
+      - Linux 客户端: kexueshangwang/client/linux.md
+  - 其他:
+    - 概述: other/gen.md
+    - Git 配置: other/git.md
+    - i3-wm 配置: other/i3wm.md
+    - Alacritty 配置: other/alacritty.md
+    - Polybar 配置: other/polybar.md
